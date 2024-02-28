@@ -29,6 +29,8 @@ dependencies {
     // JSON
     implementation("org.json:json:20230227")
 
+    // Commons IO
+    implementation("org.apache.commons:commons-io:1.3.2")
 
     // HTTP
     implementation("com.squareup.retrofit2:retrofit:2.9.0")

@@ -8,5 +8,7 @@ data class ProductDTO (
     @JsonProperty("name")
     var name: String? = "",
     @JsonProperty("description")
-    var description: String? = ""
+    var description: String? = "",
+    @JsonProperty("icon")
+    var icon: String? = "",
 )
