@@ -37,7 +37,7 @@ class ProductsController {
         if (!productsMap.containsKey(id)) {
             return ResponseEntity("{}", HttpStatus.INTERNAL_SERVER_ERROR)
         }
-        return ResponseEntity(productsMap.get(id), HttpStatus.OK)
+        return ResponseEntity(productsMap[id], HttpStatus.OK)
     }
 
     @DeleteMapping("/public/products/{id}")
@@ -46,7 +46,7 @@ class ProductsController {
             return ResponseEntity("{}", HttpStatus.INTERNAL_SERVER_ERROR)
         }
 
-        val product = productsMap.get(id);
+        val product = productsMap[id];
         productsMap.remove(id)
 
         return ResponseEntity(product, HttpStatus.OK)
